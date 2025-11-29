@@ -1,0 +1,62 @@
+.container {
+	position: relative;
+	display: inline-block;
+	max-width: 600px;
+	width: 100%;
+	margin-bottom: 30px;
+	.textAreaMain {
+		border-radius: 5px;
+		box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.45);
+		background: rgba(18, 18, 18, 1);
+		padding: 28px;
+		padding-right: 70px;
+		width: 100%;
+		margin: 0 auto;
+		color: white;
+		border: none;
+		outline: none;
+		font-size: 16px;
+		resize: none;
+		overflow-y: hidden;
+
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.7);
+		}
+	}
+
+	.mainInputBtn {
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		border-radius: 25px;
+		background: rgba(49, 55, 201, 1);
+		padding: 14px 12px 13px 15px;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background-color 0.3s ease;
+	}
+
+	.fileInputLabel {
+		position: absolute;
+		right: 75px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.fileName {
+		display: flex;
+		align-items: center;
+		.fileNameSpan {
+			color: white;
+			margin-right: 10px;
+		}
+		.removeFileBtn {
+			color: red;
+			font-size: 35px;
+		}
+	}
+}

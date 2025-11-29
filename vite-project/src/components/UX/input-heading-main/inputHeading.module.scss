@@ -1,0 +1,30 @@
+.inputHeadingContainer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	.titleInput {
+		border-radius: 5px;
+		box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.45);
+		background: rgba(18, 18, 18, 1);
+		width: 300px;
+		padding: 20px;
+		color: white;
+		margin-right: 10px;
+		&::placeholder {
+			color: rgba(210, 210, 210, 1);
+
+			font-family: Roboto;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 18px;
+			letter-spacing: 0%;
+			text-align: left;
+		}
+	}
+	.errorMessage {
+		color: #ff4757;
+		font-size: 12px;
+		bottom: -20px;
+		left: 0;
+	}
+}
