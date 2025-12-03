@@ -1,0 +1,126 @@
+.aboutPage {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title {
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.cardContainer {
+  flex: 0 0 300px;
+  margin: 30px;
+}
+
+.card {
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+}
+
+.cardLink {
+  padding: 30px;
+  width: 100%;
+  height: 400px;
+  border: 2px solid black;
+  background: white;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.25s ease;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translate(-30px, -30px);
+    border-color: #5bc0eb;
+  }
+}
+
+.cardDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.cardIcon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  margin: 0;
+  text-align: center;
+}
+
+.cardHover {
+  display: none;
+  height: 100%;
+}
+
+.cardHoverTitle {
+  margin: 0 0 20px 0;
+}
+
+.cardDescription {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.cardLinkText {
+  margin: 20px 0 0;
+  font-weight: bold;
+  color: #5bc0eb;
+}
+
+.cardBorder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 2px dashed black;
+  z-index: -1;
+}
+
+.cardDark {
+  .cardLink {
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+  
+  .cardLinkText {
+    color: #fde74c;
+  }
+}
+
+// Адаптивность
+@media (max-width: 768px) {
+  .aboutPage {
+    padding: 20px;
+  }
+  
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cardContainer {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+}
